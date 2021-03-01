@@ -4,14 +4,26 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MasterTraining {
-
+    /**
+     * cracion de atributos
+     */
     public static final int UNDEFINED=-1;
-
-    private List<Plan> plans;
-
+    /**
+     * Creacion de relaciones
+     */
+    private ArrayList<Plan> plans;
+    private ArrayList<Cyclist> cyclists;
+    private ArrayList<Workout> workouts;
+    private ArrayList<Trainer> trainers;
+    /**
+     * contructor
+     */
     public MasterTraining() {
         this.plans = new ArrayList<>();
     }
+    /**
+     * creacion de metodos
+     */
 
     /**
      * Determina para un plan específico el rendimiento del corazón del ciclista.
