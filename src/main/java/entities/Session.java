@@ -24,4 +24,12 @@ public class Session {
     public Date date(){
         return new Date();
     }
+
+    public int averageBeats(){
+        int result=0;
+        if(activity!= null){
+            result=activity.averageBeats();
+        }
+        return result;
+    }
 }

@@ -12,7 +12,7 @@ public class Plan {
     public static final int MAX_BEATS = 160;
 
     private long number;
-    private char type; //en el digrama de clases aparecec string
+    private String type; //en el digrama de clases aparecec string pero en el codigo enviado aparece char
 
     private Date date;
     private int level;
@@ -34,7 +34,20 @@ public class Plan {
         this.number = number;
         this.weeks = new ArrayList<>();
     }
-
+    public Plan(String type, Cyclist cyclist){
+        this.type=type;
+        this.cyclist=cyclist;
+    }
+    /**
+     * Creacion de metodos
+     */
+    public int averageBeats(){
+        int result =0;
+        for(int i=0; getWeeks().size()<i;i++){
+            result = this.weeks.get(i).averageBeats();
+        }
+        return result;
+    }
     /**
      * Creacion de (getters, adders,...)
      *
@@ -47,7 +60,7 @@ public class Plan {
         return number;
     }
 
-    public char getType() {
+    public String getType() {
         return type;
     }
 

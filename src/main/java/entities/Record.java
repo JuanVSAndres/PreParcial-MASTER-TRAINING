@@ -18,4 +18,10 @@ public class Record {
     public Record(int beats) {
         this.beats = beats;
     }
+    /**
+     * Creacion de getters
+     */
+    public int getBeats() {
+        return beats;
+    }
 }

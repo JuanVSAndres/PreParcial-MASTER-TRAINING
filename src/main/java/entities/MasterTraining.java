@@ -33,8 +33,13 @@ public class MasterTraining {
      * @return Plan: El nuevo plan creado en caso de necesitarlo, de lo contrario null.
      */
     public Plan checkHeart(long number) {
-        this.findPlan(number);
-        return null;
+        int pab=this.findPlan(number).averageBeats();
+        if(pab<90 || pab>160){
+            Plan p = new Plan(1);
+            plans.add(p);
+            return p;
+        }
+            return null;
     }
 
     public Plan findPlan(long number){

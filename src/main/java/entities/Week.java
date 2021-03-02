@@ -23,6 +23,16 @@ public class Week {
         this.sessions = new ArrayList<>();
     }
     /**
+     * Creacion de metodos
+     */
+    public int averageBeats(){
+        int result=0;
+        for(int i=0; sessions.size()<i; i++){
+            result = this.sessions.get(i).averageBeats();
+        }
+        return result;
+    }
+    /**
      *
      */
     public void registerSession(Session session) {
