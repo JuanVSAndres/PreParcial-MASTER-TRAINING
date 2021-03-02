@@ -50,4 +50,8 @@ public class Plan {
     public char getType() {
         return type;
     }
+
+    public List<Week> getWeeks() {
+        return weeks;
+    }
 }

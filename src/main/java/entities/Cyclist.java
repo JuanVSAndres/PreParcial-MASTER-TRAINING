@@ -18,6 +18,10 @@ public class Cyclist {
      */
     private ArrayList<Plan> plans;
     private ArrayList<Activity> results;
-
-
+    /**
+     *  Creacion de getters
+     */
+    public ArrayList<Plan> getPlans() {
+        return plans;
+    }
 }

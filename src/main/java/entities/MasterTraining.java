@@ -33,6 +33,17 @@ public class MasterTraining {
      * @return Plan: El nuevo plan creado en caso de necesitarlo, de lo contrario null.
      */
     public Plan checkHeart(long number) {
+        this.findPlan(number);
+        return null;
+    }
+
+    public Plan findPlan(long number){
+        for(int i=0;i<plans.size();i++){
+            if(plans.get(i).getNumber()==number){
+
+                return plans.get(i);
+            }
+        }
         return null;
     }
 
